@@ -52,3 +52,142 @@
 .min-height-full {
   min-height: 100vh;
 }
+
+// Attractions listing and details
+.attractions-intro {
+  margin-bottom: 24px;
+}
+
+.attraction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.attraction-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.attraction-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.attraction-card-image img,
+.attraction-card-placeholder {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background: #f6f8fa;
+}
+
+.attraction-card-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a737d;
+  font-size: 14px;
+}
+
+.attraction-card-body {
+  padding: 12px 14px 14px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb-link {
+  color: #0366d6;
+}
+
+.breadcrumb-separator {
+  margin: 0 6px;
+  color: #6a737d;
+}
+
+.attraction-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.attraction-hero {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.attraction-hero-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.attraction-hero-placeholder {
+  width: 100%;
+  height: 260px;
+  background: #f6f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a737d;
+}
+
+.attraction-meta {
+  padding: 16px;
+}
+
+.boxed-section {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  background: #fff;
+  padding: 16px;
+}
+
+.attraction-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px 24px;
+}
+
+.attraction-fact {
+  margin: 0;
+}
+
+.attraction-fact dt {
+  font-weight: 600;
+  color: #24292e;
+}
+
+.attraction-fact dd {
+  margin: 4px 0 0;
+  color: #586069;
+}
+
+.attraction-amenities {
+  list-style: disc;
+  padding-left: 20px;
+  color: #24292e;
+}
+
+@media (max-width: 544px) {
+  .attraction-hero-image,
+  .attraction-hero-placeholder {
+    height: 200px;
+  }
+}

@@ -1,0 +1,64 @@
+{% assign back_link = site.baseurl | append: '/attractions/' %}
+{% if attraction %}
+<div class="breadcrumb">
+  <a href="{{ back_link }}" class="breadcrumb-link">親子景點列表</a>
+  <span class="breadcrumb-separator">/</span>
+  <span aria-current="page">{{ attraction.name }}</span>
+</div>
+
+<div class="attraction-detail">
+  <div class="attraction-hero">
+    {% if attraction.image_url %}
+      <img src="{{ attraction.image_url }}" alt="{{ attraction.name }} 圖片" loading="lazy" class="attraction-hero-image">
+    {% else %}
+      <div class="attraction-hero-placeholder">暫無圖片</div>
+    {% endif %}
+    <div class="attraction-meta">
+      <div class="d-flex flex-items-center flex-wrap">
+        <h1 class="f00-light lh-condensed mb-2 flex-auto">{{ attraction.name }}</h1>
+        <a href="{{ attraction.map_url }}" class="btn btn-primary ml-md-3 mt-2 mt-md-0" target="_blank" rel="noopener">查看地圖</a>
+      </div>
+      <div class="text-gray f5">{{ attraction.category }} · {{ attraction.address }}</div>
+      <div class="d-flex flex-items-center flex-wrap mt-2">
+        {% if attraction.rating %}<span class="label label-green mr-2">⭐ {{ attraction.rating }}</span>{% endif %}
+        {% if attraction.reviews %}<span class="text-gray">{{ attraction.reviews }} 則評論</span>{% endif %}
+      </div>
+      <div class="mt-2">{{ attraction.status }} {% if attraction.hours %}<span class="text-gray">{{ attraction.hours }}</span>{% endif %}</div>
+    </div>
+  </div>
+
+  <div class="boxed-section">
+    <h2 class="h3 mb-3">景點資訊</h2>
+    <dl class="attraction-facts">
+      <div class="attraction-fact">
+        <dt>地址</dt>
+        <dd>{{ attraction.address }}</dd>
+      </div>
+      <div class="attraction-fact">
+        <dt>類型</dt>
+        <dd>{{ attraction.category }}</dd>
+      </div>
+      <div class="attraction-fact">
+        <dt>營業資訊</dt>
+        <dd>{{ attraction.status }}{% if attraction.hours %}<span class="text-gray">（{{ attraction.hours }}）</span>{% endif %}</dd>
+      </div>
+      <div class="attraction-fact">
+        <dt>Google 地圖</dt>
+        <dd><a href="{{ attraction.map_url }}" target="_blank" rel="noopener">在新分頁開啟</a></dd>
+      </div>
+    </dl>
+
+    {% if attraction.amenities and attraction.amenities.size > 0 %}
+      <h3 class="h4 mt-4">特色與服務</h3>
+      <ul class="attraction-amenities">
+        {% for amenity in attraction.amenities %}
+          <li>{{ amenity }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div>
+{% else %}
+  <div class="flash flash-error">找不到指定的親子景點。</div>
+  <p><a href="{{ back_link }}">返回親子景點列表</a></p>
+{% endif %}
