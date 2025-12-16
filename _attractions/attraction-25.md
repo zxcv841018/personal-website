@@ -1,0 +1,18 @@
+---
+layout: attraction
+title: "星夢森林劇場"
+slug: attraction-25
+map_url: "https://www.google.com/maps/place/%E6%98%9F%E5%A4%A2%E6%A3%AE%E6%9E%97%E5%8A%87%E5%A0%B4/data=!4m7!3m6!1s0x3467e724caa03127:0x8fd44426fd79f4e1!8m2!3d24.6807635!4d121.7399275!16s%2Fg%2F11tp9r2h4t!19sChIJJzGgyiTnZzQR4fR5_SZE1I8?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.9
+reviews: 26987
+category: "旅遊景點"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五09:00"
+image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSwYnYfbQOqiNPZylS_p3Bal4uYAXM6urmF7XI0ZZNHDgABdocr5BA5-d3VM0xuOzRMzm6KOJ0sIG9bhbJ6KpLEQWua1wf8BwS1Olscmy-dp9Gq-dmFmo8r-WdXs5XyWW_usOw=w122-h92-k-no"
+tags:
+  - "門市服務"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

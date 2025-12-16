@@ -1,0 +1,18 @@
+---
+layout: attraction
+title: "莎貝莉娜精靈印畫學院"
+slug: attraction-60
+map_url: "https://www.google.com/maps/place/%E8%8E%8E%E8%B2%9D%E8%8E%89%E5%A8%9C%E7%B2%BE%E9%9D%88%E5%8D%B0%E7%95%AB%E5%AD%B8%E9%99%A2/data=!4m7!3m6!1s0x3467fb4b8e55e817:0x4822a320d5244666!8m2!3d24.777106!4d121.7371841!16s%2Fg%2F11_qk8d7q!19sChIJF-hVjkv7ZzQRZkYk1SCjIkg?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.6
+reviews: 4803
+category: "旅遊景點"
+address: "梅洲一路16-3號"
+status: "已打烊"
+hours: "以童話為主題的手工藝中心"
+tags:
+  - "⋅ 開始營業時間：週五09:00"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

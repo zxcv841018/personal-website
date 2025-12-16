@@ -1,0 +1,19 @@
+---
+layout: attraction
+title: "一米特米食點心觀光工廠"
+slug: attraction-07
+map_url: "https://www.google.com/maps/place/%E4%B8%80%E7%B1%B3%E7%89%B9%E7%B1%B3%E9%A3%9F%E9%BB%9E%E5%BF%83%E8%A7%80%E5%85%89%E5%B7%A5%E5%BB%A0/data=!4m7!3m6!1s0x3467e8667f8cfb05:0x902ad22702522c7a!8m2!3d24.6171866!4d121.830808!16s%2Fg%2F1pzsyx6j2!19sChIJBfuMf2boZzQReixSAifSKpA?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.0
+reviews: 7079
+category: "旅遊景點"
+address: "祥和路199號"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五08:30"
+image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSzCt5RAi7zNSlYngKbn-5Sy4jZv2MIsR1rYlI-ozYSBpZ09ZfkRbxQSBepJ54e-zhGjzZxlVi0fGReI8eDmfSO8LHVwJBDjS1nr7LOgbGSGQ8hjOsgONmLmwQHkjDhPd036hbZ8=w122-h92-k-no"
+tags:
+  - "門市服務"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

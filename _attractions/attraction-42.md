@@ -1,0 +1,18 @@
+---
+layout: attraction
+title: "宜蘭親子館暨培力中心（原宜蘭熊讚親子館）"
+slug: attraction-42
+map_url: "https://www.google.com/maps/place/%E5%AE%9C%E8%98%AD%E8%A6%AA%E5%AD%90%E9%A4%A8%E6%9A%A8%E5%9F%B9%E5%8A%9B%E4%B8%AD%E5%BF%83%EF%BC%88%E5%8E%9F%E5%AE%9C%E8%98%AD%E7%86%8A%E8%AE%9A%E8%A6%AA%E5%AD%90%E9%A4%A8%EF%BC%89/data=!4m7!3m6!1s0x3467e5c87c0667c1:0xab4149e28768e30a!8m2!3d24.7525308!4d121.7531965!16s%2Fg%2F11gwm9c3k9!19sChIJwWcGfMjlZzQRCuNoh-JJQas?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.7
+reviews: 140
+category: "社會服務機構"
+address: "中山路二段462號3樓"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五09:00"
+tags:
+  - "親子景點"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

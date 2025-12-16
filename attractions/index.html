@@ -1,0 +1,30 @@
+---
+layout: default
+title: 宜蘭親子景點列表
+---
+
+<div class="attraction-intro mb-4">
+  <p class="f4">精選宜蘭地區的親子友善景點，提供快速圖片預覽、營業資訊與導航連結。</p>
+</div>
+
+<div class="attraction-grid">
+  {% assign sorted_attractions = site.attractions | sort: 'title' %}
+  {% for attraction in sorted_attractions %}
+    <a class="attraction-card" href="{{ site.baseurl }}{{ attraction.url }}">
+      <div class="attraction-thumb {% unless attraction.image %}has-placeholder{% endunless %}" {% if attraction.image %}style="background-image: url('{{ attraction.image }}');"{% endif %}>
+        {% unless attraction.image %}
+        <span class="placeholder-text">圖片準備中</span>
+        {% endunless %}
+      </div>
+      <div class="attraction-card-body">
+        <h2 class="h4 mb-1">{{ attraction.title }}</h2>
+        <p class="text-gray f6 mb-2">{{ attraction.category }}</p>
+        <p class="f6 mb-2">
+          {% if attraction.rating %}<strong>{{ attraction.rating }}</strong> / 5{% endif %}
+          {% if attraction.reviews %}<span class="text-gray">（{{ attraction.reviews }} 則評論）</span>{% endif %}
+        </p>
+        <p class="text-gray f6 mb-0">{{ attraction.address }}</p>
+      </div>
+    </a>
+  {% endfor %}
+</div>

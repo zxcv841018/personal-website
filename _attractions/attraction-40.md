@@ -1,0 +1,19 @@
+---
+layout: attraction
+title: "初咪親子體驗農場|宜蘭帶小孩必去景點|宜蘭室內景點親子推薦|最佳親子團體旅遊景點"
+slug: attraction-40
+map_url: "https://www.google.com/maps/place/%E5%88%9D%E5%92%AA%E8%A6%AA%E5%AD%90%E9%AB%94%E9%A9%97%E8%BE%B2%E5%A0%B4%7C%E5%AE%9C%E8%98%AD%E5%B8%B6%E5%B0%8F%E5%AD%A9%E5%BF%85%E5%8E%BB%E6%99%AF%E9%BB%9E%7C%E5%AE%9C%E8%98%AD%E5%AE%A4%E5%85%A7%E6%99%AF%E9%BB%9E%E8%A6%AA%E5%AD%90%E6%8E%A8%E8%96%A6%7C%E6%9C%80%E4%BD%B3%E8%A6%AA%E5%AD%90%E5%9C%98%E9%AB%94%E6%97%85%E9%81%8A%E6%99%AF%E9%BB%9E/data=!4m7!3m6!1s0x34680bd20597b55d:0x6b7615638f87d46d!8m2!3d24.6702328!4d121.625393!16s%2Fg%2F11s4t2r433!19sChIJXbWXBdILaDQRbdSHj2MVdms?authuser=0&hl=zh-TW&rclk=1"
+rating: 5.0
+reviews: 6789
+category: "旅遊運營商"
+address: "東興路13號"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五09:00"
+image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSziU2I9pkHBkyRk6TPEZQCKEDuwFfQgZ4_HGFehl31l8BAbWWouVi8CnmfRBXQNAsHBFI7Z-uVFLHPAk0VMr7TV4c1vMxvT1MS7adTs7ElCzmU8qA6fjbpxwdiqzBTNM5uSOJug=w122-h92-k-no"
+tags:
+  - "門市服務"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

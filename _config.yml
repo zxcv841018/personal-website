@@ -6,6 +6,11 @@ plugins:
   - jekyll-github-metadata
   - jemoji
 
+collections:
+  attractions:
+    output: true
+    permalink: /attractions/:name/
+
 permalink: /:year/:month/:day/:title/
 
 defaults:

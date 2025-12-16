@@ -1,0 +1,17 @@
+---
+layout: attraction
+title: "冬山鄉政公園"
+slug: attraction-56
+map_url: "https://www.google.com/maps/place/%E5%86%AC%E5%B1%B1%E9%84%89%E6%94%BF%E5%85%AC%E5%9C%92/data=!4m7!3m6!1s0x3467e6335a18bd15:0x702ca2f500d28835!8m2!3d24.6338118!4d121.7940042!16s%2Fg%2F11dyx7kq3g!19sChIJFb0YWjPmZzQRNYjSAPWiLHA?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.5
+reviews: 131
+category: "旅遊景點"
+address: "冬山路98號"
+status: "24 小時營業"
+tags:
+  - "親子景點"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

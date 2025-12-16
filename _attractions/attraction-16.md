@@ -1,0 +1,19 @@
+---
+layout: attraction
+title: "樂色山"
+slug: attraction-16
+map_url: "https://www.google.com/maps/place/%E6%A8%82%E8%89%B2%E5%B1%B1/data=!4m7!3m6!1s0x3467e488ff915f91:0x8f4b3ed69beeb7e!8m2!3d24.7306773!4d121.7747729!16s%2Fg%2F11cnd74hvm!19sChIJkV-R_4jkZzQRfuu-ae2z9Ag?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.8
+reviews: 11614
+category: "旅遊景點"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五09:00"
+image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxW-8SInnEvXwirDloyXCT_4h5XGR7y-wng3wLNDPUgVGi7n8O8o_WZlG-6-xkkF1w3KEHfBOwHKWBCDyOnKVqNsRyTlFaKiP_ZQ5J1vjlJogg_49bqn5nGG4QkAk9dD4u2Za91FA=w122-h92-k-no"
+tags:
+  - "門市服務"
+  - "$$"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

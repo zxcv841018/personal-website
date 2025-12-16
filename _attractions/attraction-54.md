@@ -1,0 +1,18 @@
+---
+layout: attraction
+title: "宜蘭縣自然史教育館"
+slug: attraction-54
+map_url: "https://www.google.com/maps/place/%E5%AE%9C%E8%98%AD%E7%B8%A3%E8%87%AA%E7%84%B6%E5%8F%B2%E6%95%99%E8%82%B2%E9%A4%A8/data=!4m7!3m6!1s0x3467e5d509c9d629:0x2069d601b27200ca!8m2!3d24.6814177!4d121.7676719!16s%2Fg%2F1tr8j952!19sChIJKdbJCdXlZzQRygBysgHWaSA?authuser=0&hl=zh-TW&rclk=1"
+rating: 4.4
+reviews: 33
+category: "旅遊景點"
+address: "中華路99號"
+status: "已打烊"
+hours: "涵蓋博物館、花園與公園的園區"
+tags:
+  - "⋅ 開始營業時間：週五08:30"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>

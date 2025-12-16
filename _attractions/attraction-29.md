@@ -1,0 +1,19 @@
+---
+layout: attraction
+title: "宜蘭縣礁溪親子館"
+slug: attraction-29
+map_url: "https://www.google.com/maps/place/%E5%AE%9C%E8%98%AD%E7%B8%A3%E7%A4%81%E6%BA%AA%E8%A6%AA%E5%AD%90%E9%A4%A8/data=!4m7!3m6!1s0x3467fb9c6640e117:0xf46622fe483251ef!8m2!3d24.7794243!4d121.7449665!16s%2Fg%2F11txpvznmc!19sChIJF-FAZpz7ZzQR71EySP4iZvQ?authuser=0&hl=zh-TW&rclk=1"
+rating: 5.0
+reviews: 238
+category: "兒童館"
+address: "育龍路71號b1"
+status: "已打烊"
+hours: "⋅ 開始營業時間：週五09:00"
+image: "https://lh3.googleusercontent.com/gps-cs-s/AG0ilSxkf1hhwVqvnDytVwc1gcbji7AjHXwQsN7h2hF_OtcU6x7LeJjMP-LZ0fkxF4UbTYd1be6v8HB1eigbm0rTOJZ8-soAlT1dxrFT54pNAqplzMxOTk0EtxeHEQaNn-wa3hP9xUIOpg=w80-h106-k-no"
+tags:
+  - "親子景點"
+---
+
+<div class="attraction-content">
+  <p class="lead">這裡會為您整理地點資訊、開放狀態與地圖連結，方便家庭旅遊快速掌握重點。</p>
+</div>
