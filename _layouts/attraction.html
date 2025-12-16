@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<article class="attraction">
+  <header class="page-header">
+    <p class="meta">{{ page.city }} · 適合年齡：{{ page.age_range }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+  </header>
+
+  {% if page.hero_image %}
+  <figure class="hero">
+    <img src="{{ page.hero_image }}" alt="{{ page.title }}" />
+  </figure>
+  {% endif %}
+
+  <section class="info">
+    {% if page.address %}<p><strong>地址：</strong>{{ page.address }}</p>{% endif %}
+    {% if page.opening_hours %}<p><strong>開放時間：</strong>{{ page.opening_hours }}</p>{% endif %}
+    {% if page.ticket_info %}<p><strong>票價：</strong>{{ page.ticket_info }}</p>{% endif %}
+    {% if page.getting_there %}<p><strong>交通：</strong>{{ page.getting_there }}</p>{% endif %}
+  </section>
+
+  {% if page.highlights %}
+  <section>
+    <h2>必玩亮點</h2>
+    <ul>
+      {% for highlight in page.highlights %}
+      <li>{{ highlight }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <section class="content">
+    {{ content }}
+  </section>
+
+  {% if page.tags %}
+  <footer class="tags">
+    <strong>關鍵字：</strong>
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </footer>
+  {% endif %}
+</article>
