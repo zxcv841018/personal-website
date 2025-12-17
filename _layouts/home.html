@@ -9,6 +9,10 @@
     </div>
 
     <div class="my-6">
+      {% include attractions-grid.html %}
+    </div>
+
+    <div class="my-6">
       {% include projects.html %}
     </div>
 
@@ -37,6 +41,10 @@
             {{ content }}
           </div>
         {% endunless %}
+
+        <div class="mb-6">
+          {% include attractions-grid.html %}
+        </div>
 
         {% include projects.html %}
 

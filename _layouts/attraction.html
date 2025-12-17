@@ -1,0 +1,64 @@
+{% include header.html %}
+
+{% assign icon_color = site.style == 'dark' | default: false %}
+{% assign placeholder_image = site.attraction_placeholder | default: '/assets/images/attraction-placeholder.svg' %}
+<div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
+  <div class="flex-self-stretch {% if site.style == 'dark' %}bg-gray-dark{% else %}border-md-right border-gray-light bg-white{% endif %} col-md-5 col-lg-4 col-xl-3 px-4 px-md-6 px-lg-7 py-6">
+    {% include masthead.html metadata=true %}
+  </div>
+
+  <div class="col-md-7 col-lg-8 col-xl-9 px-4 py-6 px-lg-7 border-top border-md-top-0 bg-gray-light" {% if site.style == 'dark' %}style="background-color: #2f363d !important"{% endif %}>
+    <div class="mx-auto" style="max-width: 960px;">
+      <nav aria-label="Breadcrumb" class="f5 mb-3">
+        <ol class="breadcrumb d-flex flex-items-center">
+          <li class="mr-2">
+            <a href="{{ '/attractions/' | relative_url }}" class="d-flex flex-items-center {% if site.style == 'dark' %}text-white{% endif %}">
+              {% octicon chevron-left height:16 class:"mr-2 v-align-middle" fill:#0366d6 aria-label:"返回列表" %}
+              親子景點列表
+            </a>
+          </li>
+          <li aria-current="page" class="text-gray">{{ page.title }}</li>
+        </ol>
+      </nav>
+      <div class="Box p-4">
+        <div class="d-flex flex-column flex-md-row flex-items-start flex-items-md-center">
+          <img
+            src="{{ page.image_url | default: placeholder_image }}"
+            alt="{{ page.title }}"
+            class="attraction-hero mr-md-4 mb-3 mb-md-0"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='{{ placeholder_image }}';">
+          <div>
+            <p class="text-uppercase text-gray">{{ page.category }}</p>
+            <h1 class="f00-light lh-condensed mb-2">{{ page.title }}</h1>
+            <div class="d-flex flex-items-center flex-wrap mb-2">
+              {% if page.rating %}
+                <span class="Label bg-blue text-white mr-2">{{ page.rating }}</span>
+              {% endif %}
+              {% if page.reviews %}
+                <span class="text-gray mr-3">{{ page.reviews }} 則評論</span>
+              {% endif %}
+              {% if page.status %}
+                <span class="text-semibold">{{ page.status }}</span>
+              {% endif %}
+            </div>
+            {% if page.hours %}
+              <p class="mb-2">{{ page.hours }}</p>
+            {% endif %}
+            {% if page.address %}
+              <p class="mb-3">📍 {{ page.address }}</p>
+            {% endif %}
+            {% if page.map_url %}
+              <a class="btn btn-primary" href="{{ page.map_url }}" target="_blank" rel="noopener">在地圖上查看</a>
+            {% endif %}
+          </div>
+        </div>
+        <div class="mt-4 prose-lg">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}
