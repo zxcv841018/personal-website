@@ -1,0 +1,46 @@
+{% include header.html %}
+
+<div class="attraction-wrapper {% if site.style == 'dark' %}text-white{% endif %}">
+  <div class="attraction-inner">
+    <nav class="attraction-breadcrumb" aria-label="Breadcrumb">
+      <a href="{{ '/attractions/' | relative_url }}">親子景點列表</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ page.title }}</span>
+    </nav>
+
+    <div class="attraction-hero card border rounded-2 overflow-hidden">
+      {% if page.image_url %}
+        <div class="attraction-hero__media">
+          <img src="{{ page.image_url }}" alt="{{ page.title }}" loading="lazy">
+        </div>
+      {% endif %}
+      <div class="attraction-hero__body p-4">
+        <div class="d-flex flex-wrap flex-justify-between flex-items-center mb-3">
+          <h1 class="f00-light lh-condensed mb-0">{{ page.title }}</h1>
+          {% if page.rating %}
+            <p class="attraction-rating h4 text-gray mb-0">⭐ {{ page.rating }} <span class="text-gray-light">({{ page.reviews }})</span></p>
+          {% endif %}
+        </div>
+        <p class="text-gray h5">{{ page.category }}</p>
+        {% if page.address %}
+          <p class="mb-2">📍 {{ page.address }}</p>
+        {% endif %}
+        {% if page.status %}
+          <p class="mb-2">{{ page.status }}{% if page.hours %} · {{ page.hours }}{% endif %}</p>
+        {% elsif page.hours %}
+          <p class="mb-2">{{ page.hours }}</p>
+        {% endif %}
+        {% if page.tag %}
+          <p class="Label Label--gray mb-3">{{ page.tag }}</p>
+        {% endif %}
+        <a class="btn btn-primary" href="{{ page.map_url }}" target="_blank" rel="noopener">在 Google 地圖上查看</a>
+      </div>
+    </div>
+
+    <div class="article attraction-content mt-4">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
+{% include footer.html %}

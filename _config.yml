@@ -8,6 +8,11 @@ plugins:
 
 permalink: /:year/:month/:day/:title/
 
+collections:
+  attractions:
+    output: true
+    permalink: /attractions/:slug/
+
 defaults:
   -
     scope:

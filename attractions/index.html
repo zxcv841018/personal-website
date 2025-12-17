@@ -1,0 +1,31 @@
+---
+layout: default
+title: 親子景點列表
+permalink: /attractions/
+---
+
+<div class="attractions-intro">
+  <p class="mb-3">為每個親子景點打造了專屬頁面，點擊下方卡片即可查看詳細資訊與地圖連結。</p>
+</div>
+
+<div class="attraction-grid">
+  {% assign places = site.attractions | sort: 'title' %}
+  {% for place in places %}
+    <article class="attraction-card">
+      <a class="attraction-card__media" href="{{ place.url | relative_url }}">
+        {% if place.image_url %}
+          <img src="{{ place.image_url }}" alt="{{ place.title }}" loading="lazy">
+        {% else %}
+          <div class="attraction-card__placeholder">沒有圖片</div>
+        {% endif %}
+      </a>
+      <div class="attraction-card__body">
+        <h2 class="h3 lh-condensed"><a href="{{ place.url | relative_url }}">{{ place.title }}</a></h2>
+        <p class="attraction-card__meta text-gray">{{ place.category }}{% if place.rating %} · ⭐ {{ place.rating }} ({{ place.reviews }}){% endif %}</p>
+        {% if place.address %}
+          <p class="attraction-card__address">📍 {{ place.address }}</p>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>
