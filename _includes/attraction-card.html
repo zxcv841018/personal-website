@@ -1,0 +1,35 @@
+{% assign attraction = include.attraction %}
+{% assign image_url = attraction.image_url %}
+{% if image_url == '' %}
+  {% assign image_url = '/assets/images/attraction-placeholder.svg' | relative_url %}
+{% endif %}
+<article class="attraction-card">
+  <a class="attraction-card__image" href="{{ '/attractions/' | append: attraction.slug | append: '/' | relative_url }}">
+    <img src="{{ image_url }}" alt="{{ attraction.name }}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='{{ '/assets/images/attraction-placeholder.svg' | relative_url }}';">
+  </a>
+  <div class="attraction-card__body">
+    <div class="attraction-card__meta">
+      <span class="attraction-card__category">{{ attraction.category }}</span>
+      {% if attraction.service != '' %}
+        <span class="attraction-card__pill">{{ attraction.service }}</span>
+      {% endif %}
+    </div>
+    <h3 class="attraction-card__title">
+      <a href="{{ '/attractions/' | append: attraction.slug | append: '/' | relative_url }}">{{ attraction.name }}</a>
+    </h3>
+    <p class="attraction-card__address">{{ attraction.address }}</p>
+    <div class="attraction-card__footer">
+      <div class="attraction-card__rating">
+        {% if attraction.rating %}
+          <span class="attraction-card__rating-score">★ {{ attraction.rating | round: 1 }}</span>
+        {% else %}
+          <span class="attraction-card__rating-score">暫無評分</span>
+        {% endif %}
+        {% if attraction.reviews %}
+          <span class="attraction-card__reviews">({{ attraction.reviews }} 則評論)</span>
+        {% endif %}
+      </div>
+      <a class="btn btn-sm" href="{{ '/attractions/' | append: attraction.slug | append: '/' | relative_url }}">查看景點</a>
+    </div>
+  </div>
+</article>

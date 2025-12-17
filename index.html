@@ -1,3 +1,18 @@
 ---
 layout: home
+title: 親子景點
 ---
+
+<section class="article">
+  <h1 class="lh-condensed">宜蘭親子景點地圖</h1>
+  <p class="f4">在這裡快速瀏覽精選的親子景點，查看評分、地址與營業資訊，點擊即可進入專屬頁面。</p>
+  <a class="btn" href="{{ '/attractions/' | relative_url }}">查看全部 {{ site.data.attractions | size }} 個景點</a>
+</section>
+
+<div class="attraction-grid">
+  {% assign attractions = site.data.attractions | sort: 'rating' | reverse %}
+  {% assign featured = attractions | slice: 0, 6 %}
+  {% for attraction in featured %}
+    {% include attraction-card.html attraction=attraction %}
+  {% endfor %}
+</div>

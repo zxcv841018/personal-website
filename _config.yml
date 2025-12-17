@@ -8,6 +8,12 @@ plugins:
 
 permalink: /:year/:month/:day/:title/
 
+collections:
+  attractions:
+    output: true
+    permalink: /attractions/:slug/
+
+# Defaults configure layouts for posts and generated attraction pages
 defaults:
   -
     scope:
@@ -15,6 +21,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "attractions"
+    values:
+      layout: "attraction"
 
 projects:
   sort_by: pushed
