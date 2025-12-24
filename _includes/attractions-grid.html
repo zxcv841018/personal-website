@@ -1,0 +1,30 @@
+{% assign attractions = site.data.attractions | sort: 'name' %}
+{% assign placeholder_image = site.attraction_placeholder | default: '/assets/images/attraction-placeholder.svg' %}
+<div class="attractions-heading d-flex flex-justify-between flex-items-center mb-3">
+  <div>
+    <p class="text-uppercase text-gray text-small mb-1">親子景點</p>
+    <h2 class="f2-light mb-0">精選 60 個宜蘭親子景點</h2>
+  </div>
+  <a class="btn btn-outline" href="{{ '/attractions/' | relative_url }}">瀏覽全部</a>
+</div>
+<div class="attractions-grid">
+  {% for place in attractions %}
+    {% assign card_image = place.image_url | default: placeholder_image %}
+    <a class="attraction-card" href="{{ '/attractions/' | append: place.slug | append: '/' | relative_url }}" aria-label="{{ place.name }}">
+      <div class="attraction-card__image" style="background-image: url('{{ card_image }}'), url('{{ placeholder_image }}');"></div>
+      <div class="attraction-card__body">
+        <p class="text-uppercase text-gray text-small mb-1">{{ place.category }}</p>
+        <h3 class="f4 lh-condensed mb-1">{{ place.name }}</h3>
+        <p class="text-gray mb-1">📍 {{ place.address }}</p>
+        <div class="d-flex flex-items-center flex-wrap text-small">
+          {% if place.rating %}
+            <span class="Label bg-blue text-white mr-2">{{ place.rating }}</span>
+          {% endif %}
+          {% if place.reviews %}
+            <span class="text-gray">{{ place.reviews }} 則評論</span>
+          {% endif %}
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>

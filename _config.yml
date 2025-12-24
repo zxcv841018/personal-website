@@ -1,5 +1,6 @@
 layout: sidebar
 style: light
+attraction_placeholder: /assets/images/attraction-placeholder.svg
 
 plugins:
   - jekyll-octicons
